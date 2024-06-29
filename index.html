@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='./styles/index.css'>
+    <link rel="stylesheet" href='./styles/fonts.css'>
+    <title>Loan Calc</title>
+</head>
+<body>
+    <content class="loan-calc">
+        <h1>Кредитный Калькулятор</h1>
+        <form>
+            <div class="loan-field">
+                <input type='number' placeholder="">
+                <label>Сумма</label>
+            </div>
+            <div class="term-rate-fields">
+                <div class="loan-field">
+                    <input type='number' placeholder="">
+                    <label>Срок</label>
+                </div>
+                <div class="loan-field">
+                    <input type='number' placeholder="Ставка">
+                    <label>Ставка</label>
+                </div>
+            </div>
+            <div class="loan-field calculate-button">
+                <input type='button' value="Рассчитать"> 
+            </div>
+        </form>
+       <div class="output">
+            <div class="output-field">
+                <span>Ежемесячный платёж</span>
+                <div class="monthly-payment">20000</div>
+            </div>
+            <div class="output-field">
+                <span>Общая сумма выплаты по кредиту</span>
+                <div class="total-amount">2000000</div>
+            </div>
+       </div>
+    </content>
+</body>
+</html>

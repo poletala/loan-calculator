@@ -1,0 +1,148 @@
+body, h1, span {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%230e0101' fill-opacity='0.64'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+}
+h1 {
+    display: flex;
+    font-family: Jost;
+    font-weight: 900;
+    font-size: 30px;
+    margin: 2% auto;
+    color: rgb(216, 115, 65);
+    cursor: default;
+
+}
+content {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 500px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin: auto;
+    
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 70%;
+    margin: 20px auto;
+}
+input {
+    width: 100%;
+    height: 30px;
+}
+.loan-field {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.loan-field input {
+    background-color: #FFF;
+    border: 2px solid rgb(216, 115, 65);
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: #434242;
+    font-size: 16px;
+    line-height: 16px;  
+    height: 50px;
+    outline: 0;
+    padding: 0 20px;
+    width: 100%;
+}
+.loan-field label {
+    font-family: Jost;
+    font-weight: 500;
+    color: #434242;
+    background-color: #FFF;
+    font-size: 16px;
+    padding: 5px 10px;
+    pointer-events: none;
+    position: absolute;
+    transition: all 200ms;
+    top: 12px;
+    left: 10px;
+    background-color: #FFF;
+}
+.loan-field input:focus + label,
+.loan-field input:not(:placeholder-shown) + label{
+    top: -10px;
+    left: 10px;
+    font-size: 11px; 
+    background-color: rgb(216, 115, 65);
+    padding: 2px 10px;
+    color: white;
+    border-radius: 5px;
+}
+.term-rate-fields {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+input[type=button] {
+    transition: width 0.4s ease-in-out;
+    background-color: rgb(216, 115, 65);
+    width: 50%;
+    font-family: Jost;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+  
+input[type=button]:hover {
+    width: 100%;
+}
+.calculate-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.output {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 22%;
+    border: 2px solid rgb(216, 115, 65);
+    border-radius: 10px;
+    margin: 0 auto;
+    gap: 46px;
+    cursor: default;
+}
+.output-field {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.output-field > span {
+    position: absolute;
+    left: 20px;
+    top: 6px;
+    font-family: Jost;
+    font-weight: 500;
+    font-size: 16px;
+    color: #434242;
+    height: 20px;
+}
+.output-field > div {
+    position: absolute;
+    right: 12px;
+    top: 28px;
+    font-family: Jost;
+    font-weight: 700;
+    font-size: 20px;
+    color: rgb(216, 115, 65);
+    height: 20px;
+}
