@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href='./styles/index.css'>
     <link rel="stylesheet" href='./styles/fonts.css'>
     <title>Loan Calc</title>
@@ -11,17 +11,17 @@
     <content class="loan-calc">
         <h1>Кредитный Калькулятор</h1>
         <form>
-            <div class="loan-field">
-                <input type='number' placeholder="">
+            <div class="loan-field sum">
+                <input type='number' placeholder="" class="sum-field" onfocus="focusElement(this)">
                 <label>Сумма</label>
             </div>
             <div class="term-rate-fields">
-                <div class="loan-field">
-                    <input type='number' placeholder="">
-                    <label>Срок</label>
+                <div class="loan-field term">
+                    <input type='number' placeholder="" class="term-field" onfocus="focusElement(this)">
+                    <label>Срок (мес)</label>
                 </div>
-                <div class="loan-field">
-                    <input type='number' placeholder="Ставка">
+                <div class="loan-field rate">
+                    <input type='number' placeholder="" class="rate-field" onfocus="focusElement(this)">
                     <label>Ставка</label>
                 </div>
             </div>
@@ -29,7 +29,7 @@
                 <input type='button' value="Рассчитать"> 
             </div>
         </form>
-       <div class="output">
+       <div class="output hidden">
             <div class="output-field">
                 <span>Ежемесячный платёж</span>
                 <div class="monthly-payment">20000</div>
@@ -40,5 +40,6 @@
             </div>
        </div>
     </content>
+    <script src="./index.js"></script>
 </body>
 </html>
